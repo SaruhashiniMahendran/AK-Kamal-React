@@ -1,0 +1,99 @@
+.navigation-footer {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px;
+}
+
+.toggle-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+  display: none;
+}
+
+.navigation.open .toggle-button:first-child {
+  display: none;
+}
+
+.navigation.open .toggle-button:last-child {
+  display: block;
+}
+
+.navigation:not(.open) .toggle-button:first-child {
+  display: block;
+}
+
+.navigation:not(.open) .toggle-button:last-child {
+  display: none;
+}
+
+.toggle-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+}
+
+.toggle-button:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.toggle-icon {
+  width: 20px;
+  height: 20px;
+  color: #666;
+}
+
+.navigation.open .toggle-icon {
+  transform: rotate(180deg);
+  transition: transform 0.3s ease;
+}
+
+/* Mobile Responsive Styles */
+@media screen and (max-width: 768px) {
+  .navigation-footer {
+    position: static;
+    padding: 1rem;
+    margin-top: 1rem;
+  }
+
+  .toggle-button {
+    width: 100%;
+    text-align: center;
+    padding: 12px;
+  }
+
+  .toggle-icon {
+    width: 24px;
+    height: 24px;
+  }
+
+  .navigation-item {
+    padding: 0.75rem 1rem;
+  }
+
+  .navigation-item span {
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .navigation-item {
+    padding: 0.5rem 0.75rem;
+  }
+
+  .toggle-button {
+    padding: 10px;
+  }
+
+  .toggle-icon {
+    width: 20px;
+    height: 20px;
+  }
+}
