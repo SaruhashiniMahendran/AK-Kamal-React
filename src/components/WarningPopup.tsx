@@ -25,7 +25,7 @@ const WarningPopup: React.FC<WarningPopupProps> = ({ isOpen, onClose, onConfirm 
         className="warning-popup-content"
       >
         <div className="warning-message">
-          <h3>You can't perform any activities here; this section only displays the calendar view.</h3>
+          <h3>You are an admin user. Are you sure you want to continue?</h3>
           <div className="warning-buttons">
             <button onClick={onClose}>Cancel</button>
             <button onClick={onConfirm}>OK</button>
